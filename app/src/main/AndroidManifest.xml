@@ -24,7 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.FormularioActivity" />
+        <activity android:name=".activity.FormularioActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
 
         <provider
             android:name="android.support.v4.content.FileProvider"

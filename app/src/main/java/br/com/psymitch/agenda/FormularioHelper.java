@@ -18,7 +18,7 @@ public class FormularioHelper {
     private final EditText campoTelefone;
     private final EditText campoEndereco;
     private final EditText campoEmail;
-    private final RatingBar campoNota;
+    //private final RatingBar campoNota;
     private final ImageView campoFoto;
     private final EditText campoSite;
     private Contato contato;
@@ -29,7 +29,7 @@ public class FormularioHelper {
         campoTelefone = (EditText) activity.findViewById(R.id.formulario_telefone);
         campoEndereco = (EditText) activity.findViewById(R.id.formulario_endereco);
         campoEmail = (EditText) activity.findViewById(R.id.formulario_email);
-        campoNota = (RatingBar) activity.findViewById(R.id.formulario_nota);
+        //campoNota = (RatingBar) activity.findViewById(R.id.formulario_nota);
         campoFoto = (ImageView) activity.findViewById(R.id.formulario_foto);
         campoSite = (EditText) activity.findViewById(R.id.formulario_site);
         contato = new Contato();
@@ -42,7 +42,7 @@ public class FormularioHelper {
         campoEndereco.setText(contato.getEndereco());
         campoEmail.setText(contato.getEmail());
         campoSite.setText(contato.getSite());
-        campoNota.setProgress(contato.getNota().intValue());
+        //campoNota.setProgress(contato.getNota().intValue());
         carregaImagem(contato.getCaminhoFoto());
         this.contato = contato;
         return contato;
@@ -55,7 +55,7 @@ public class FormularioHelper {
         contato.setEndereco(campoEndereco.getText().toString());
         contato.setEmail(campoEmail.getText().toString());
         contato.setSite(campoSite.getText().toString());
-        contato.setNota(Double.valueOf(campoNota.getProgress()));
+        //contato.setNota(Double.valueOf(campoNota.getProgress()));
         contato.setCaminhoFoto((String) campoFoto.getTag());
         return contato;
     }
