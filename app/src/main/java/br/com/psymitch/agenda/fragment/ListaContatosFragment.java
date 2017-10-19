@@ -153,7 +153,6 @@ public class ListaContatosFragment extends Fragment {
         deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-
                 ContatoDAO dao = new ContatoDAO(getContext());
                 dao.deletar(contato);
                 dao.close();
